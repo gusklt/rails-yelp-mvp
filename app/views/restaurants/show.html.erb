@@ -1,7 +1,9 @@
 <h1><%= @restaurant.name %></h1> (<%= @restaurant.category %>)
 <hr>
+
+<hr>
 <%= @restaurant.address %> | <%= @restaurant.phone_number %>
 <hr>
-reviews
+<%= link_to 'Leave a review', new_restaurant_review_path(@restaurant) %>
 <hr>
 <p><%= link_to "Back to Restaurants", restaurants_path %></p>
